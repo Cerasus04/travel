@@ -1,0 +1,126 @@
+.order-form {
+  max-width: $desktop-width;
+  min-height: 455px;
+  margin: 0 auto 169px;
+  background: url("../img/bg-dt@1x.jpg") 9px 0 no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/bg-dt@2x.jpg") 9px 0 no-repeat;
+    background-size: cover;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    min-height: auto;
+    background: none;
+    margin: 0 auto;
+  }
+}
+
+.order-form__window {
+  width: 640px;
+  min-height: 315px;
+  margin-top: 69px;
+  margin-left: auto;
+  box-shadow: 0px 4px 30px $gray-shadow;
+  border-radius: 5px;
+  background-color: $white;
+  z-index: 2;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    margin: 0;
+    background-color: $light;
+  }
+}
+
+.order-form__wrapper {
+  width: 557px;
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+}
+
+.order-form__title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 600;
+  padding: 50px 20px 10px 117px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.order-form__text {
+  @include text;
+  line-height: 24px;
+  padding: 0 10px 21px 55px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.order-form__wrapper-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: $mobile-width-only) {
+    width: 91%;
+    margin: 0 auto;
+  }
+}
+
+.order-form__input-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 19px;
+  margin-bottom: 24px;
+
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.order-form__row {
+  width: 270px;
+
+  & input {
+    width: 100%;
+    padding: 16px;
+  }
+
+  & input::placeholder {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+  }
+}
+
+.order-form__button {
+  width: 176px;
+  padding: 17px;
+  margin: 0 auto;
+  border: 0;
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 2px;
+    width: 100%;
+  }
+}

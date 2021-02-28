@@ -1,0 +1,17 @@
+.travels-list {
+  @include ul-reset;
+  width: 260px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.travel-list__link {
+  margin: 0;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  color: $lightgray-text;
+}

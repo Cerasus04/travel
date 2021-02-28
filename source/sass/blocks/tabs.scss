@@ -1,0 +1,39 @@
+.tabs {
+  position: relative;
+  @include ul-reset;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 94px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 2px;
+    bottom: -12px;
+    width: 900px;
+    height: 1px;
+    background-color: $light-underline;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    display: none;
+    // решение не готово
+  }
+}
+
+.tabs__item {
+  @include text-tabs;
+  margin-right: 99px;
+  letter-spacing: -0.4px;
+
+  @media (max-width: $mobile-width) {
+    margin-right: 70px;
+  }
+}
+
+.tabs__item--hidden {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}

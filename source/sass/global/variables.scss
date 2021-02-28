@@ -1,0 +1,81 @@
+$dark: #2c2e3f; //темный
+$black: #000000; //черный
+$darkest: #141517; //самый темный
+$main-accent: #fe7865; //акцентный основной
+$accent-hover: #f17d4b; //акцентный при наведении
+$light: #fbf8f8; //светлый
+$lightgray: #d8d8d8; //светлый серый
+$light-bg: #e5e5e5; //серый для фона
+$light-additional: #d7d9d1; //серый дополнительный
+$silver: #c4c4c4; //подложка
+$white: #ffff;
+$gray-shadow: rgba(41, 54, 66, 0.1);
+$lightgray-text: rgba(20, 21, 23, 0.5);
+$light-underline: rgba(44, 46, 63, 0.3);
+
+//Viewports
+
+$desktop-width: 1170px;
+$tablet-width: 668px;
+$mobile-width: 290px;
+
+$tablet-width-only: 1023px;
+$mobile-width-only: 767px;
+
+//Mixin
+
+@mixin ul-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin title-mobile {
+  margin: 0;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+}
+
+@mixin title-tablet {
+  margin: 0;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 600;
+}
+
+@mixin title-desktop {
+  margin: 0;
+  font-size: 55px;
+  line-height: 80px;
+  font-weight: 600;
+}
+
+@mixin text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+@mixin text-review {
+  margin: 0;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+}
+
+@mixin text-tabs {
+  margin: 0;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+@mixin text-country {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}

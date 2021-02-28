@@ -1,0 +1,15 @@
+.header {
+  min-height: 99px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 89px;
+  }
+
+  @media (max-width: $mobile-width) {
+    min-height: 50px;
+  }
+}
+
+.header__nav {
+  width: 1170px;
+}

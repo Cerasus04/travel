@@ -1,0 +1,40 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 32px;
+  padding-bottom: 75px;
+
+  @media (max-width: $mobile-width-only) {
+    grid-template-columns: 100%;
+    grid-row-gap: 20px;
+    padding-bottom: 0;
+  }
+}
+
+.footer__next-travels {
+  width: 390px;
+  padding-left: 18px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.footer__corporate-travels {
+  width: 390px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+}
+
+.footer__contacts {
+  width: 390px;
+  padding-left: 73px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    padding: 0;
+  }
+}

@@ -1,0 +1,27 @@
+.next-travels {
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
+}
+
+.next-travels__title {
+  margin: 0;
+  margin-bottom: 17px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.next-travels__list {
+  display: grid;
+
+  grid-template-columns: 95px 95px 95px;
+  column-gap: 32px;
+  row-gap: 5px;
+  color: $lightgray-text;
+
+  @media (max-width: $mobile-width-only) {
+    grid-template-columns: 95px 95px;
+    column-gap: 32px;
+  }
+}

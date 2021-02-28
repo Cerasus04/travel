@@ -1,0 +1,35 @@
+.details {
+  max-width: $desktop-width;
+  margin: 0 auto;
+  margin-bottom: 233px;
+
+  @media (max-width: $tablet-width-only) {
+    max-width: 768px;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    margin-bottom: 125px;
+  }
+}
+
+.details__tabs {
+  @media (max-width: $tablet-width-only) {
+    max-width: 768px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 91%;
+  }
+}
+
+.details__list {
+  @media (max-width: $tablet-width-only) {
+    max-width: 768px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 91%;
+  }
+}

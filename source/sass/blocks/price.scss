@@ -1,0 +1,149 @@
+.prices {
+  display: flex;
+  flex-wrap: wrap;
+
+  max-width: $desktop-width;
+  margin: 0 auto 145px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 95%;
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 25px;
+  }
+}
+
+.prices__packages {
+  width: 770px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 100%;
+  }
+}
+
+.prices__title {
+  @include title-desktop;
+
+  position: relative;
+  line-height: 90px;
+  margin: 112px 0 44px;
+  padding-left: 10px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 8px;
+    bottom: -15px;
+    width: 175px;
+    height: 2px;
+    background-color: $main-accent;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    @include title-tablet;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+
+    &::before {
+      visibility: hidden;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    @include title-mobile;
+    margin-bottom: 30px;
+  }
+}
+
+.prices__wrapper {
+  width: 313px;
+  margin-left: 86px;
+  padding: 0 0 0 18px;
+
+  @media (max-width: $tablet-width-only) {
+    order: -1;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 91%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.prices__text {
+  @include text;
+  line-height: 27px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 91%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.price__feedback-wrapper {
+  margin: 60px 26px 30px 53px;
+
+  @media (max-width: $tablet-width-only) {
+    width: 91%;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+}
+
+.prices__feedback {
+  margin-bottom: 11px;
+  color: $darkest;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 34px;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
+
+.prices__link {
+  position: relative;
+  text-decoration: none;
+  color: $black;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: -44px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    color: $main-accent;
+    border-bottom: 1px solid $main-accent;
+
+    &::before {
+      visibility: hidden;
+    }
+  }
+}

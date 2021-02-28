@@ -1,0 +1,21 @@
+.page {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+
+  .page__header {
+    max-width: $desktop-width;
+    margin: 0 auto;
+  }
+
+  .page__footer {
+    max-width: $desktop-width;
+    margin: 0 auto;
+
+    @media (max-width: $mobile-width-only) {
+      width: 100%;
+    }
+  }
+}
