@@ -80,10 +80,12 @@ input[type="radio"].visually-hidden {
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer; }
+  @media (max-width: 1023px) {
+    .site-btn {
+      padding: 19px 0; } }
   @media (max-width: 767px) {
     .site-btn {
-      max-width: 288px;
-      padding: 19px 0; } }
+      max-width: 288px; } }
 
 .page {
   display: grid;
@@ -299,7 +301,7 @@ input[type="radio"].visually-hidden {
       margin: 0 auto;
       padding: 75px 0 20px; } }
 
-.description-title {
+.description__title {
   margin: 0;
   font-size: 55px;
   line-height: 80px;
@@ -308,14 +310,15 @@ input[type="radio"].visually-hidden {
   letter-spacing: -1px;
   color: inherit; }
   @media (max-width: 1023px) {
-    .description-title {
+    .description__title {
       margin: 0;
       font-size: 30px;
       line-height: 45px;
       font-weight: 600;
-      text-align: center; } }
+      text-align: center;
+      margin-bottom: 15px; } }
   @media (max-width: 767px) {
-    .description-title {
+    .description__title {
       margin: 0;
       font-size: 24px;
       line-height: 36px;
@@ -329,12 +332,12 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
-  width: 32%;
+  width: 82%;
   margin-bottom: 30px;
   letter-spacing: -0.5px; }
   @media (max-width: 1023px) {
     .description__text {
-      width: 60%;
+      width: 55%;
       margin: 0 auto;
       text-align: center; } }
   @media (max-width: 767px) {
@@ -346,7 +349,7 @@ input[type="radio"].visually-hidden {
 
 .description__button {
   display: block;
-  width: 29%;
+  width: 73%;
   position: relative;
   font-size: 12px; }
   .description__button::before {
