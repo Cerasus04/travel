@@ -93,7 +93,7 @@
 }
 
 .list__button {
-  width: 21.37%;
+  width: 51%;
   text-align: center;
 
   @media (max-width: $tablet-width-only) {
@@ -122,22 +122,22 @@
     }
 
     &--Albania {
-      background-image: url("../img/Albania1-mobile@1x.jpg") center no-repeat;
+      background: url("../img/Albania1-mobile@1x.jpg") center no-repeat;
       background-size: cover;
     }
 
     &--Macedonia {
-      background-image: url("../img/Macedonia1-mobile@1x.jpg") center no-repeat;
+      background: url("../img/Macedonia1-mobile@1x.jpg") center no-repeat;
       background-size: cover;
     }
 
     &--Montenegro {
-      background-image: url("../img/Montenegro1-mobile@1x.jpg") center no-repeat;
+      background: url("../img/Montenegro1-mobile@1x.jpg") center no-repeat;
       background-size: cover;
     }
 
     &--Croatia {
-      background-image: url("../img/Croatia1-mobile@1x.jpg") center no-repeat;
+      background: url("../img/Croatia1-mobile@1x.jpg") center no-repeat;
       background-size: cover;
     }
   }
@@ -149,7 +149,7 @@
   display: flex;
   flex-direction: column;
   width: 382px;
-  min-height: 367px;
+  // min-height: 367px;
   background-color: $white;
 
   & blockquote {
@@ -238,7 +238,7 @@
     background-color: $main-accent;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     &::before {
       width: 68px;
       height: 1px;

@@ -17,11 +17,22 @@
     grid-row-gap: 32px;
     grid-column-gap: 29px;
   }
-}
 
-.visits .visits__item:nth-child(3n + 3) {
-  @media (min-width: $desktop-width) {
-    margin-right: 0;
+  & .visits__item:nth-child(3n + 3) {
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
+  }
+  & .visits__item:nth-child(4) {
+    @media (min-width: $desktop-width) {
+      margin-right: 120px;
+    }
+  }
+
+  & .visits__item:nth-child(5) {
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
   }
 }
 
