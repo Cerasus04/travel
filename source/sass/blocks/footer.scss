@@ -4,6 +4,12 @@
   grid-column-gap: 32px;
   padding-bottom: 75px;
 
+  @media (max-width: $tablet-width-only) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px;
+  }
+
   @media (max-width: $mobile-width-only) {
     grid-template-columns: 100%;
     grid-row-gap: 20px;
@@ -11,30 +17,41 @@
   }
 }
 
-.footer__next-travels {
-  width: 390px;
+.footer__next-travels { 
+  width: 350px;
   padding-left: 18px;
 
+  @media (max-width: $tablet-width-only) {  
+    padding: 0;
+    padding-bottom: 30px;
+  }
+
   @media (max-width: $mobile-width-only) {
-    width: 100%;
+    margin: 0 auto;
     padding: 0;
   }
 }
 
 .footer__corporate-travels {
-  width: 390px;
+  @media (max-width: $tablet-width-only) {  
+    text-align: center;
+    padding-bottom: 80px;
+  }
 
   @media (max-width: $mobile-width-only) {
-    width: 100%;
+    margin: 0 auto;
   }
 }
 
 .footer__contacts {
-  width: 390px;
   padding-left: 73px;
 
+  @media (max-width: $tablet-width-only) {  
+    padding-left: 25px;
+  }
+
   @media (max-width: $mobile-width-only) {
-    width: 100%;
+    margin: 0 auto;
     padding: 0;
   }
 }

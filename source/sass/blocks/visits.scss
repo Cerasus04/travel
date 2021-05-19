@@ -8,7 +8,10 @@
 
   @media (max-width: $tablet-width-only) {
     width: 100%;
-    justify-content: space-between;
+    
+    & .visits__item:nth-child(n + 1) {
+      margin-right: 13px;
+    }
   }
 
   @media (max-width: $mobile-width-only) {
@@ -16,6 +19,10 @@
     display: grid;
     grid-row-gap: 32px;
     grid-column-gap: 29px;
+
+    & .visits__item:nth-child(n + 1) {
+      margin-right: 0;
+    }
   }
 
   & .visits__item:nth-child(3n + 3) {
@@ -23,6 +30,7 @@
       margin-right: 0;
     }
   }
+  
   & .visits__item:nth-child(4) {
     @media (min-width: $desktop-width) {
       margin-right: 120px;

@@ -36,6 +36,10 @@
       border: 3px solid $main-accent;
     }
   }
+
+  @media (max-width: $tablet-width-only) {
+    width: 100%;
+  }
 }
 
 .packages-list__item-wrapper {

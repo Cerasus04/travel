@@ -1,16 +1,20 @@
 .details {  
   max-width: $desktop-width;
   margin: 0 auto;
-  margin-bottom: 233px;
+  padding-bottom: 233px;
+  background-image: url("../img/bg-review.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media (max-width: $tablet-width-only) {
+    background-image: none;
     max-width: 768px;
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
 
   @media (max-width: $mobile-width-only) {
     width: 100%;
-    margin-bottom: 125px;
+    padding-bottom: 125px;
   }
 }
 
