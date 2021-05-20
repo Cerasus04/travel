@@ -1,0 +1,170 @@
+.pay-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 728px;
+  min-height: 444px;
+  background-color: $light;
+  background-image: url("../img/paymodal-desktop@1x.webp");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 2;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/paymodal-desktop@2x.webp");
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: none;
+    width: 320px;
+  }
+}
+
+.pay-modal__form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 390px;
+  margin-left: 336px;
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+    width: 320px;
+  }
+}
+
+.pay-modal__text {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 170%;
+  text-align: center;
+  width: 100%;
+  color: $darkest;
+  margin-top: 73px;
+  margin-bottom: 51px;
+}
+
+.pay-modal__label {
+  position: absolute;
+  top: 17px;
+  left: 26px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark;
+
+  &::after {
+    content: "*";
+    position: absolute;
+    color: $main-accent;
+    top: -8px;
+    left: -11px;
+  }
+}
+
+.pay-modal__control {
+  background-color: $light;
+  border: 1px solid rgba($lightgray, 0.3);
+  padding: 16px 15px 15px 51px;
+  width: 269px;
+  min-height: 50px;
+
+  &:nth-child(3) {
+    margin-bottom: 17px;
+  }
+}
+
+.pay-modal__control-wrap {
+  position: relative;
+  margin-bottom: 18px;
+
+  &--active {
+    &::before {
+      content: "Данные не верны";
+      position: absolute;
+      top: -16px;
+      left: 0;
+      color: $main-accent;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    & .pay-modal__control {
+      border: 1px solid $main-accent;
+    }
+  }
+
+
+  &:nth-child(3) .pay-modal__control {
+    padding: 16px 15px 15px 14px;
+  }
+}
+
+.pay-modal__btn {
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $silver;
+  padding: 18px 39px 17px 40px;
+  margin-top: 1px;
+  background-color: $main-accent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $accent-hover;
+  }
+}
+
+.pay-modal__control::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark;
+}
+
+.pay-modal__control:-moz-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark;
+}
+
+.pay-modal__btn-close {
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/closemodal.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.pay-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(black, 0.5);
+  display: none;
+  z-index: 1;
+
+  &--active {
+    display: block;
+  }
+}

@@ -19,8 +19,9 @@
   border: 1px solid $light-underline;
   border-radius: 6px;
 
-  &--complex {
-    border: none;
+  &:hover,
+  &:focus {
+    border: 2px solid $main-accent;
 
     & .packages-list__title,
     & .packages-list__price {

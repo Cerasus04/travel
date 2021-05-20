@@ -42,3 +42,10 @@ input[type="radio"].visually-hidden {
   width: 1px;
   overflow: hidden;
 }
+
+.link {
+  &:hover,
+  &:focus {
+    color: $accent-hover;
+  }
+}

@@ -26,6 +26,11 @@
   @include text-tabs;
   margin-right: 99px;
   letter-spacing: -0.4px;
+  color: rgba(44, 46, 63, 0.3);
+
+  &--active {
+    color: $main-accent;
+  }
 
   @media (max-width: $mobile-width) {
     margin-right: 70px;

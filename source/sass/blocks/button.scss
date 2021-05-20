@@ -11,6 +11,12 @@
   text-transform: uppercase;
   cursor: pointer;
 
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $accent-hover;
+  }
+
   @media (max-width: $tablet-width-only) {
     padding: 19px 0;
   }

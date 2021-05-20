@@ -28,13 +28,13 @@
         <div class="header__nav-wrapper">
           <ul class="header__site-list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="#about-place"> О путешествии </a>
+              <a class="site-list__link link" href="#about-place"> О путешествии </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#price"> Цены </a>
+              <a class="site-list__link link" href="#price"> Цены </a>
             </li>
           </ul>
-          <a class="header__phone" href="tel:749978468446">+7 (499) -784-684-46</a>
+          <a class="header__phone link" href="tel:749978468446">+7 (499) -784-684-46</a>
         </div>
       </nav>
     </header>
@@ -48,7 +48,7 @@
               В этом туре вы откроете для себя Европу в новом свете. Вас ждет:
               море, горы, а также потрясающая красота природы.
             </p>
-            <a class="description__button site-btn" href="#more-details"><span>Смотреть тур</span></a>
+            <a class="description__button site-btn" href="#more-details" aria-label="Смотреть тур"><span>Смотреть тур</span></a>
           </div>
         </div>
       </section>
@@ -194,7 +194,7 @@
       <section class="details" id="more-details">
         <h2 class="visually-hidden">Подробнее о странах</h2>
         <ul class="details__tabs tabs">
-          <li class="tabs__item" id="tabs-Greece">Греция</li>
+          <li class="tabs__item tabs__item--active" id="tabs-Greece">Греция</li>
           <li class="tabs__item" id="tabs-Albania">Албания</li>
           <li class="tabs__item tabs__item--hidden" id="tabs-Macedonia">
             Македония
@@ -219,7 +219,7 @@
                 достигающих в высоту 600 метров, наградой будет неописуемая
                 красота природы и атмосфера, царящая в монастырях Метеоры.
               </p>
-              <a class="list__button site-btn">Купить тур сейчас</a>
+              <a class="list__button site-btn" aria-label="Купить тур сейчас">Купить тур сейчас</a>
             </div>
             <picture> 
               <source type="image/webp" media="(max-width: 767px)" srcset="
@@ -266,7 +266,7 @@
                 слишком крупный песок. Однако, присмотревшись, можно понять, что
                 это не песок, а камни, перетёртые до такого мелкого состояния.
               </p>
-              <a class="list__button site-btn">Купить тур сейчас</a>
+              <a class="list__button site-btn" aria-label="Купить тур сейчас">Купить тур сейчас</a>
             </div>
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="
@@ -311,7 +311,7 @@
                 вершину горы Татичев Камен где находится археологический
                 памятник Кокино в длину около 100 метров.
               </p>
-              <a class="list__button site-btn">Купить тур сейчас</a>
+              <a class="list__button site-btn" aria-label="Купить тур сейчас">Купить тур сейчас</a>
             </div>
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="
@@ -358,7 +358,7 @@
                 метров, а шириной не превышает трех. При этом длина каньона
                 составляет 80 км.
               </p>
-              <a class="list__button site-btn">Купить тур сейчас</a>
+              <a class="list__button site-btn" aria-label="Купить тур сейчас">Купить тур сейчас</a>
             </div>
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="
@@ -404,7 +404,7 @@
                 скульптурами — сталактитами и сталагмитами — формировавшимися
                 тысячи и тысячи лет.
               </p>
-              <a class="list__button site-btn">Купить тур сейчас</a>
+              <a class="list__button site-btn" aria-label="Купить тур сейчас">Купить тур сейчас</a>
             </div>
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="
@@ -468,7 +468,7 @@
                 Экскурсии по удивительно красивым местам Европы
               </li>
             </ul>
-            <a class="packages-list__button site-btn">Купить тур сейчас</a>
+            <a class="packages-list__button site-btn" aria-label="Купить тур сейчас">Купить тур сейчас</a>
           </li>
           <li class="packages-list__item">
             <div class="packages-list__item-wrapper">
@@ -491,7 +491,7 @@
                 Экскурсии по удивительно красивым местам Европы
               </li>
             </ul>
-            <a class="packages-list__button site-btn">Купить тур сейчас</a>
+            <a class="packages-list__button site-btn" aria-label="Купить тур сейчас">Купить тур сейчас</a>
           </li>
         </ul>
         <div class="prices__wrapper">
@@ -503,7 +503,7 @@
           </p>
           <div class="price__feedback-wrapper">
             <p class="prices__feedback">Свяжитесь с нами</p>
-            <a class="prices__link" href="tel:749978468446">+7 (499) -784-684-46</a>
+            <a class="prices__link link" href="tel:749978468446">+7 (499) -784-684-46</a>
           </div>
         </div>
       </section>
@@ -609,6 +609,30 @@
         </p>
       </section>
     </footer>
+    <div class="pay-modal">
+      <form action="#" class="pay-modal__form">
+        <h2 class="pay-modal__text">Купить тур</h2>
+        <div class="pay-modal__control-wrap">
+          <label class="pay-modal__label" for="tel2">+7</label>
+          <input class="pay-modal__control" type="tel" name="tel2" id="tel2" placeholder="Введите 10 цифр номера" required>
+        </div>
+        <div class="pay-modal__control-wrap">
+          <label class="pay-modal__label2" for="email2"></label>
+          <input class="pay-modal__control" type="email" name="email2" id="email2" placeholder="E-mail">
+        </div>
+        <button class="pay-modal__btn site-btn success--js2" type="submit" aria-label="Отправить">Отправить</button>
+      </form>
+      <button class="pay-modal__btn-close" aria-label="Закрыть"></button>
+    </div>
+    <div class="success-modal">
+      <p class="success-modal__text">Форма успешно отправлена, спасибо! :)</p>
+      <button class="success-modal-btn" aria-label="Закрыть"></button>
+    </div>
+    <script src="js/header-humb.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/pay.js"></script>
+    <script src="js/validity.js"></script>
+    <script src="js/send.js"></script>
   </body>
 
 </html>
