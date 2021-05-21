@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/montserratregular.woff2") format("woff2"), url("../fonts/montserratregular.woff") format("woff");
@@ -68,6 +69,9 @@ input[type="radio"].visually-hidden {
   width: 1px;
   overflow: hidden; }
 
+.link:hover, .link:focus {
+  color: #f17d4b; }
+
 .site-btn {
   font-size: 12px;
   line-height: 15px;
@@ -80,6 +84,8 @@ input[type="radio"].visually-hidden {
   letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer; }
+  .site-btn:hover, .site-btn:focus, .site-btn:active {
+    background-color: #f17d4b; }
   @media (max-width: 1023px) {
     .site-btn {
       padding: 19px 0; } }
@@ -621,7 +627,10 @@ input[type="radio"].visually-hidden {
   line-height: 25px;
   font-weight: 500;
   margin-right: 99px;
-  letter-spacing: -0.4px; }
+  letter-spacing: -0.4px;
+  color: rgba(44, 46, 63, 0.3); }
+  .tabs__item--active {
+    color: #fe7865; }
   @media (max-width: 290px) {
     .tabs__item {
       margin-right: 70px; } }
@@ -1064,10 +1073,11 @@ input[type="radio"].visually-hidden {
   padding: 20px;
   border: 1px solid rgba(44, 46, 63, 0.3);
   border-radius: 6px; }
-  .packages-list__item--complex {
-    border: none; }
-    .packages-list__item--complex .packages-list__title,
-    .packages-list__item--complex .packages-list__price {
+  .packages-list__item:hover, .packages-list__item:focus {
+    border: 2px solid #fe7865; }
+    .packages-list__item:hover .packages-list__title,
+    .packages-list__item:hover .packages-list__price, .packages-list__item:focus .packages-list__title,
+    .packages-list__item:focus .packages-list__price {
       color: #fe7865; }
   @media (max-width: 1023px) {
     .packages-list__item {
@@ -1536,3 +1546,195 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400; }
+
+.pay-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 728px;
+  min-height: 444px;
+  background-color: #fbf8f8;
+  background-image: url("../img/paymodal-desktop@1x.webp");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 2;
+  display: none; }
+  .pay-modal--active {
+    display: block; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .pay-modal {
+      background-image: url("../img/paymodal-desktop@2x.webp"); } }
+  @media (max-width: 290px) {
+    .pay-modal {
+      background-image: none;
+      width: 320px; } }
+
+.pay-modal__form {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 390px;
+  margin-left: 336px; }
+  @media (max-width: 290px) {
+    .pay-modal__form {
+      margin: 0;
+      width: 320px; } }
+
+.pay-modal__text {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 170%;
+  text-align: center;
+  width: 100%;
+  color: #141517;
+  margin-top: 73px;
+  margin-bottom: 51px; }
+
+.pay-modal__label {
+  position: absolute;
+  top: 17px;
+  left: 26px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2c2e3f; }
+  .pay-modal__label::after {
+    content: "*";
+    position: absolute;
+    color: #fe7865;
+    top: -8px;
+    left: -11px; }
+
+.pay-modal__control {
+  background-color: #fbf8f8;
+  border: 1px solid rgba(216, 216, 216, 0.3);
+  padding: 16px 15px 15px 51px;
+  width: 269px;
+  min-height: 50px; }
+  .pay-modal__control:nth-child(3) {
+    margin-bottom: 17px; }
+
+.pay-modal__control-wrap {
+  position: relative;
+  margin-bottom: 18px; }
+  .pay-modal__control-wrap--active::before {
+    content: "Данные не верны";
+    position: absolute;
+    top: -16px;
+    left: 0;
+    color: #fe7865;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px; }
+  .pay-modal__control-wrap--active .pay-modal__control {
+    border: 1px solid #fe7865; }
+  .pay-modal__control-wrap:nth-child(3) .pay-modal__control {
+    padding: 16px 15px 15px 14px; }
+
+.pay-modal__btn {
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #c4c4c4;
+  padding: 18px 39px 17px 40px;
+  margin-top: 1px;
+  background-color: #fe7865;
+  border: none;
+  cursor: pointer; }
+  .pay-modal__btn:hover {
+    background-color: #f17d4b; }
+
+.pay-modal__control::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2c2e3f; }
+
+.pay-modal__control:-moz-placeholder {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2c2e3f; }
+
+.pay-modal__btn-close {
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/closemodal.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  right: 20px; }
+
+.pay-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1; }
+  .pay-modal-overlay--active {
+    display: block; }
+
+.success-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 728px;
+  min-height: 444px;
+  background-color: #e5e5e5;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2; }
+  .success-modal--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  @media (max-width: 290px) {
+    .success-modal {
+      width: 320px; } }
+
+.success-modal__text {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 170%;
+  text-align: center;
+  color: #d8d8d8;
+  padding: 0 112px; }
+  @media (max-width: 290px) {
+    .success-modal__text {
+      padding: 0 10px; } }
+
+.success-modal-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/icon/closemodal.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  border: none; }
