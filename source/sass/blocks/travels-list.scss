@@ -3,8 +3,9 @@
   width: 260px;
 
   @media (max-width: $mobile-width-only) {
-    width: 65%;
+    width: 100%;
     margin: 0 auto;
+    justify-content: center;
   }
 }
 
