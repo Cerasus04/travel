@@ -248,90 +248,122 @@ input[type="radio"].visually-hidden {
       visibility: hidden; } }
 
 .description {
-  min-height: 860px;
-  background-color: #c4c4c4;
-  margin-bottom: 200px;
-  background: url("../img/Travel-dt@1x.jpg") center no-repeat;
-  background-size: cover; }
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-    .description {
-      background-color: #c4c4c4;
-      background-image: url("../img/Travel-dt@2x.jpg");
-      background-size: 1150px auto; } }
+  position: relative;
+  margin-bottom: 150px; }
+  .description::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/Travel-dt@1x.jpg");
+    background-color: #c4c4c4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 860px;
+    width: 100%;
+    top: 0;
+    z-index: -1; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+      .description::after {
+        background-image: url("../img/Travel-dt@2x.jpg"); } }
+    @media (max-width: 1023px) {
+      .description::after {
+        min-height: 344px; } }
+    @media (max-width: 767px) {
+      .description::after {
+        background-image: url("../img/Travel-tablet@1x.jpg");
+        min-height: 235px; } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
+    .description::after {
+      background-image: url("../img/Travel-tablet@2x.jpg"); } }
+    @media (max-width: 290px) {
+      .description::after {
+        background-image: url("../img/Travel-mobile@1x.jpg"); } }
+  @media (max-width: 290px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 290px) and (min-resolution: 2dppx) {
+    .description::after {
+      background-image: url("../img/Travel-mobile@2x.jpg"); } }
   @media (max-width: 1023px) {
     .description {
-      min-height: 344px;
-      margin-bottom: 80px;
-      background: url("../img/Travel-tablet@1x.jpg") center no-repeat;
-      background-size: cover; } }
-  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 2dppx) {
-    .description {
-      background: url("../img/Travel-tablet@2x.jpg") center no-repeat;
-      background-size: cover; } }
-  @media (max-width: 767px) {
-    .description {
-      min-height: 435px;
-      margin-bottom: 84px;
-      background: url("../img/Travel-mobile@1x.jpg") top no-repeat;
-      background-size: 100%; } }
-  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
-    .description {
-      background: url("../img/Travel-mobile@2x.jpg") top no-repeat;
-      background-size: 100%; } }
+      margin-bottom: 30px; } }
 
 .description__wrapper {
-  max-width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-height: 860px;
   margin: 0 auto; }
   @media (max-width: 1023px) {
     .description__wrapper {
-      width: 76.7%;
-      margin: 0 auto; } }
-  @media (max-width: 1023px) {
-    .description__wrapper {
-      width: 91%;
-      margin: 0 auto; } }
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%;
+      min-height: 344px;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start; } }
 
 .description__wrapper-info {
-  width: 467px;
-  min-height: 380px;
-  margin-left: auto;
-  padding: 180px 0 295px;
+  width: 412px;
+  min-height: 379px;
+  margin-top: -109px;
+  margin-right: 65px;
   color: #ffff; }
   @media (max-width: 1023px) {
     .description__wrapper-info {
-      width: 400px;
-      margin: 0 auto; } }
-  @media (max-width: 1023px) {
+      width: 92%;
+      text-align: center;
+      min-height: 201px;
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  @media (max-width: 767px) {
     .description__wrapper-info {
-      width: 100%;
-      margin: 0 auto;
-      padding: 75px 0 20px; } }
+      width: 100%; } }
 
 .description__title {
   margin: 0;
   font-size: 55px;
   line-height: 80px;
   font-weight: 600;
+  width: 412px;
+  min-height: 159px;
+  margin: 0 auto;
   margin-bottom: 26px;
   letter-spacing: -1px;
   color: inherit; }
   @media (max-width: 1023px) {
     .description__title {
-      margin: 0;
-      font-size: 30px;
-      line-height: 45px;
-      font-weight: 600;
+      width: 398px;
+      line-height: 150%;
       text-align: center;
-      margin-bottom: 15px; } }
+      color: #ffff;
+      min-height: 45px;
+      font-size: 32px;
+      padding-top: 58px; } }
   @media (max-width: 767px) {
     .description__title {
-      margin: 0;
-      font-size: 24px;
-      line-height: 36px;
+      max-width: 294px;
+      min-height: 72px;
+      margin-top: 0;
       font-weight: 600;
-      margin-bottom: 100px;
-      text-align: center;
-      letter-spacing: 0; } }
+      line-height: 150%;
+      letter-spacing: 0;
+      padding-top: 82px 0 50px; } }
 
 .description__text {
   margin: 0;
@@ -339,19 +371,23 @@ input[type="radio"].visually-hidden {
   line-height: 28px;
   font-weight: 400;
   width: 82%;
-  margin-bottom: 30px;
-  letter-spacing: -0.5px; }
+  min-height: 76px;
+  margin-top: 29px;
+  margin-bottom: 33px; }
   @media (max-width: 1023px) {
     .description__text {
-      width: 55%;
-      margin: 0 auto;
-      text-align: center; } }
+      width: 398px;
+      text-align: center;
+      letter-spacing: -0.5px;
+      color: #ffff;
+      margin: 14px auto 10px; } }
   @media (max-width: 767px) {
     .description__text {
-      width: 100%;
-      margin-bottom: 12px;
-      text-align: center;
-      color: #2c2e3f; } }
+      width: 85%;
+      min-height: 108px;
+      color: #2c2e3f;
+      margin-top: 99px;
+      margin-bottom: 20px; } }
 
 .description__button {
   display: block;
@@ -367,7 +403,7 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/arrow.svg"); }
   @media (max-width: 1023px) {
     .description__button {
-      width: 37.4%;
+      width: 250px;
       margin: 0 auto; } }
   @media (max-width: 767px) {
     .description__button {
@@ -379,13 +415,13 @@ input[type="radio"].visually-hidden {
   padding: 0 20px 0 41px; }
   @media (max-width: 1023px) {
     .description__button span {
-      width: 80%; } }
+      width: 80%;
+      font-weight: 700; } }
   @media (max-width: 767px) {
     .description__button span {
       padding-left: 36px;
       width: 190px;
-      font-size: 10px;
-      font-weight: 500; } }
+      font-size: 10px; } }
 
 .site-list {
   padding: 0;
@@ -1241,8 +1277,7 @@ input[type="radio"].visually-hidden {
     .order-form {
       width: 100%;
       min-height: auto;
-      background: none;
-      margin: 0 auto; } }
+      background: none; } }
 
 .order-form__window {
   position: relative;
@@ -1468,8 +1503,11 @@ input[type="radio"].visually-hidden {
   width: 260px; }
   @media (max-width: 767px) {
     .travels-list {
-      width: 65%;
-      margin: 0 auto; } }
+      width: 100%;
+      margin: 0 auto;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .travel-list__link {
   margin: 0;
@@ -1721,7 +1759,7 @@ input[type="radio"].visually-hidden {
   font-size: 25px;
   line-height: 170%;
   text-align: center;
-  color: #d8d8d8;
+  color: #2c2e3f;
   padding: 0 112px; }
   @media (max-width: 290px) {
     .success-modal__text {
