@@ -17,8 +17,9 @@
   }
 
   @media (max-width: $tablet-width-only) {
-    display: none;
-    // решение не готово
+    flex-wrap: nowrap;
+    width: 91%;
+    margin: 25px auto;
   }
 }
 

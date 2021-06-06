@@ -8,6 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 30px;
+    justify-content: space-around;
   }
 
   @media (max-width: $mobile-width-only) {
