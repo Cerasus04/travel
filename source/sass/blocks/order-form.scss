@@ -1,14 +1,12 @@
 .order-form {
   max-width: $desktop-width;
   min-height: 455px;
-  margin: 0 auto 169px;
-  // background-size: contain;
+  margin: 0 auto 169px; 
   background: url("../img/bg-dt@1x.jpg") 9px 0 no-repeat;
   
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/bg-dt@2x.jpg") 9px 0 no-repeat;
-    // background-size: contain;    
+    background: url("../img/bg-dt@2x.jpg") 9px 0 no-repeat;  
   }
 
   @media (max-width: $tablet-width-only) {

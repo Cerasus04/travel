@@ -20,7 +20,8 @@
   border-radius: 6px;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     border: 2px solid $main-accent;
 
     & .packages-list__title,

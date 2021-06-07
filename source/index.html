@@ -15,7 +15,7 @@
 
   <body>
     <header class="page__header header">
-      <nav class="header__nav header__nav--closed">
+      <nav class="header__nav header__nav--nojs">
         <!--header__nav--nojs-->
         <a class="header__logo">
           <picture>
@@ -223,7 +223,7 @@
                 достигающих в высоту 600 метров, наградой будет неописуемая
                 красота природы и атмосфера, царящая в монастырях Метеоры.
               </p>
-              <a class="list__button site-btn" aria-label="Купить тур сейчас">Купить тур сейчас</a>
+              <a class="list__button site-btn modal-js" aria-label="Купить тур сейчас">Купить тур сейчас</a>
             </div>
             <picture> 
               <source type="image/webp" media="(max-width: 767px)" srcset="
@@ -270,7 +270,7 @@
                 слишком крупный песок. Однако, присмотревшись, можно понять, что
                 это не песок, а камни, перетёртые до такого мелкого состояния.
               </p>
-              <a class="list__button site-btn" aria-label="Купить тур сейчас">Купить тур сейчас</a>
+              <a class="list__button site-btn modal-js" aria-label="Купить тур сейчас">Купить тур сейчас</a>
             </div>
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="
@@ -315,7 +315,7 @@
                 вершину горы Татичев Камен где находится археологический
                 памятник Кокино в длину около 100 метров.
               </p>
-              <a class="list__button site-btn" aria-label="Купить тур сейчас">Купить тур сейчас</a>
+              <a class="list__button site-btn modal-js" aria-label="Купить тур сейчас">Купить тур сейчас</a>
             </div>
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="
@@ -362,7 +362,7 @@
                 метров, а шириной не превышает трех. При этом длина каньона
                 составляет 80 км.
               </p>
-              <a class="list__button site-btn" aria-label="Купить тур сейчас">Купить тур сейчас</a>
+              <a class="list__button site-btn modal-js" aria-label="Купить тур сейчас">Купить тур сейчас</a>
             </div>
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="
@@ -408,7 +408,7 @@
                 скульптурами — сталактитами и сталагмитами — формировавшимися
                 тысячи и тысячи лет.
               </p>
-              <a class="list__button site-btn" aria-label="Купить тур сейчас">Купить тур сейчас</a>
+              <a class="list__button site-btn modal-js" aria-label="Купить тур сейчас">Купить тур сейчас</a>
             </div>
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="
@@ -472,7 +472,7 @@
                 Экскурсии по удивительно красивым местам Европы
               </li>
             </ul>
-            <a class="packages-list__button site-btn" aria-label="Купить тур сейчас">Купить тур сейчас</a>
+            <a class="packages-list__button site-btn modal-js" aria-label="Купить тур сейчас" tabindex="0">Купить тур сейчас</a>
           </li>
           <li class="packages-list__item">
             <div class="packages-list__item-wrapper">
@@ -495,7 +495,7 @@
                 Экскурсии по удивительно красивым местам Европы
               </li>
             </ul>
-            <a class="packages-list__button site-btn" aria-label="Купить тур сейчас">Купить тур сейчас</a>
+            <a class="packages-list__button site-btn modal-js" aria-label="Купить тур сейчас" tabindex="0">Купить тур сейчас</a>
           </li>
         </ul>
         <div class="prices__wrapper">
@@ -613,6 +613,7 @@
         </p>
       </section>
     </footer>
+    <div class="pay-modal-overlay"></div>
     <div class="pay-modal">
       <form action="#" class="pay-modal__form">
         <h2 class="pay-modal__text">Купить тур</h2>
@@ -632,6 +633,7 @@
       <p class="success-modal__text">Форма успешно отправлена, спасибо! :)</p>
       <button class="success-modal-btn" aria-label="Закрыть"></button>
     </div>
+    <script src="js/scripts.js"></script>
   </body>
 
 </html>

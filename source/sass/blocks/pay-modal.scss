@@ -20,7 +20,7 @@
     background-image: url("../img/paymodal-desktop@2x.webp");
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width-only) {
     background-image: none;
     width: 320px;
   }
@@ -34,7 +34,7 @@
   width: 390px;
   margin-left: 336px;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width-only) {
     margin: 0;
     width: 320px;
   }
@@ -127,14 +127,7 @@
   }
 }
 
-.pay-modal__control::-webkit-input-placeholder {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: $dark;
-}
-
-.pay-modal__control:-moz-placeholder {
+.pay-modal__control::placeholder {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;

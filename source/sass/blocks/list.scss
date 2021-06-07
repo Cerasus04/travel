@@ -81,20 +81,18 @@
   @include text;
   width: 370px;
   letter-spacing: -0.5px;
-  margin-right: 102px;
-  margin-bottom: 46px;
+  margin: 0 102px 46px 0; 
 
   @media (max-width: $tablet-width-only) {
     width: 97%;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     text-align: center;
-    margin-bottom: 20px;
   }
 
   @media (max-width: $mobile-width-only) {
     @include text;
     width: 91%;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
 }
 
