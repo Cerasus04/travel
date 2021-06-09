@@ -119,6 +119,7 @@
   @media (max-width: $mobile-width-only) {
     position: relative;
     width: 100%;
+    min-height: 415px;
 
     &--Greece {
       background: url("../img/Greece1-mobile@1x.jpg") center no-repeat;
@@ -168,8 +169,7 @@
   @media (max-width: $mobile-width-only) {
     text-align: center;
     position: relative;
-    width: 268px;
-    min-height: 415px;
+    width: 268px;    
     margin: 0 auto;
     top: 45px;
     right: 0;
@@ -290,7 +290,7 @@
   height: 38px;
 
   @media (max-width: $mobile-width-only) {
-    left: 40%;
+    left: 30%;
     top: -55px;
   }
 }
