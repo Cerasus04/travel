@@ -149,7 +149,7 @@ input[type="radio"].visually-hidden {
   @media (max-width: 1199px) {
     .header__nav {
       width: 81%;
-      margin: 18px 15px 14px 21px; }
+      margin: 18px auto 14px; }
       .header__nav--nojs {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -695,7 +695,8 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   margin-right: 99px;
   letter-spacing: -0.4px;
-  color: rgba(44, 46, 63, 0.3); }
+  color: rgba(44, 46, 63, 0.3);
+  cursor: pointer; }
   .tabs__item--active {
     color: #fe7865; }
   @media (max-width: 1199px) {
@@ -704,10 +705,6 @@ input[type="radio"].visually-hidden {
   @media (max-width: 290px) {
     .tabs__item {
       margin-right: 70px; } }
-
-@media (max-width: 290px) {
-  .tabs__item--hidden {
-    display: none; } }
 
 .list {
   padding: 0;
@@ -827,7 +824,8 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .list__review-wrapper {
     position: relative;
-    width: 100%; }
+    width: 100%;
+    min-height: 415px; }
     .list__review-wrapper--Greece {
       background: url("../img/Greece1-mobile@1x.jpg") center no-repeat;
       background-size: cover; }
@@ -869,7 +867,6 @@ input[type="radio"].visually-hidden {
       text-align: center;
       position: relative;
       width: 268px;
-      min-height: 415px;
       margin: 0 auto;
       top: 45px;
       right: 0;
@@ -971,7 +968,7 @@ input[type="radio"].visually-hidden {
   height: 38px; }
   @media (max-width: 767px) {
     .list__author {
-      left: 40%;
+      left: 30%;
       top: -55px; } }
 
 .prices {
